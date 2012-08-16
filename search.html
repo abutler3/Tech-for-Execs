@@ -5,57 +5,99 @@
 	
 	<title>Search Results</title>
 
+	<style>	
+input[type=text], input[type=password], textarea {
+	background: #fafafa;
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+	border: 1px solid #ddd;
+	color: #888;
+}
+input[type=text]:focus, textarea:focus {
+	color: #373737;
+}
+textarea {
+	padding-left: 3px;
+	width: 98%;
+}
+input[type=text] {
+	padding: 3px;
+}
+input#s {
+	background: url(images/search.png) no-repeat 5px 6px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	font-size: 14px;
+	height: 22px;
+	line-height: 1.2em;
+	padding: 4px 10px 4px 28px;
+}
+input#searchsubmit {
+	display: none;
+}
 
+a {
+	color: black;
+}
+	</style>
 </head>
 <body>
+
 <section id="primary" style="width: 960px; margin: 0 auto;">
 
 	<div id="content" role="main">
-		<header class="search-page-header">
-			<h1 class="search-page-title">Search Results for: <span>test</span></h1>
+		<header class="search-page-header" style="background-color: #F0E4E9; padding: 10px;"> 
+			<h2 class="search-page-title">Search Results for: <span>test</span></h2>
+			<h3>3 results found</h3>
 		</header>
-		
-		<article style="border-bottom: 1px solid black; padding-bottom: 15px; margin: 0 auto;">
-			<div class="metarelated">
-				<h2>The Three Things I Need to Know about Cloud Computing</h2>
+
+		<article style="padding-bottom: 15px; border-bottom: 1px solid black;">
+			<div class="metarelated" style="float: right;">
+				<h3 class="search-heading" style="font-size: 30px; width: 200px;"><a href="#" style="text-decoration: none;">3 ways to improve your productivity using the "Cloud"</a></h3>
+				<p><em><a href="#" style="text-decoration: none;">Filed under: Cloud, servers, EC2, productivity</a></em></p>
+				<p><em><a href="#" style="text-decoration: none;">Comments: 15</a></em></p>
+				<a href="#"><img src="images/socialplace.png" alt="" width="300" height="50"></a>
+			</div>
+
+			<div class="metaphoto" style="padding-top: 15px; float: left;">
+				<a href="#"><img src="images/videoScreenshot2.jpg" alt="" width="500" height="400"></a>
 			</div>
 			
-			<div class="metashare" style="border-top: 1px solid black; border-bottom: 0.5px solid black;">
-				<a href="#"><img src="images/socialplace.png" alt="" width="600" height="50"></a>
-			</div>
-
-			<div class="metaphoto" style="padding-top: 15px;">
-				<a href="#"><img src="images/video-screenshot.jpg" alt="" width="600" height="400"></a>
-			</div>
+			<div class="clear" style="clear: both;"></div>
 		</article>
 		
-		<article style="border-bottom: 1px solid black; padding-bottom: 15px;">
-			<div class="metarelated">
-				<h2>How can you implement CRM today</h2>
+		<article style="padding-bottom: 15px; border-bottom: 1px solid black;">
+			<div class="metarelated" style="float: right;">
+				<h3 class="search-heading" style="font-size: 30px; width: 200px;"><a href="#" style="text-decoration: none;">What is server-side and why you should care</a></h3>
+				<p><em><a href="#" style="text-decoration: none;">Filed under: Cloud, servers, EC2, productivity</a></em></p>
+				<p><em><a href="#" style="text-decoration: none;">Comments: 15</a></em></p>
+				<a href="#"><img src="images/socialplace.png" alt="" width="300" height="50"></a>
+			</div>
+
+			<div class="metaphoto" style="padding-top: 15px; float: left;">
+				<a href="#"><img src="images/video-screenshot.jpg" alt="" width="500" height="400"></a>
 			</div>
 			
-			<div class="metashare" style="border-top: 1px solid black;">
-				<a href="#"><img src="images/socialplace.png" alt="" width="600" height="50"></a>
+			<div class="clear" style="clear: both;"></div>
+		</article>
+
+		
+		<article style="padding-bottom: 15px; border-bottom: 1px solid black;">
+			<div class="metarelated" style="float: right;">
+				<h3 class="search-heading" style="font-size: 30px; width: 200px;"><a href="#" style="text-decoration: none;">Why are you not using CRM? It's costing you money!</a></h3>
+				<p class="search-text"><em><a href="#" style="text-decoration: none;">Filed under: Cloud, servers, EC2, productivity</a></em></p>
+				<p><em><a href="#" style="text-decoration: none;">Comments: 2</a></em></p>
+				<a href="#"><img src="images/socialplace.png" alt="" width="300" height="50"></a>
 			</div>
 
-			<div class="metaphoto" style="padding-top: 15px;">
-				<a href="#"><img src="images/videoScreenshot2.jpg" alt="" width="600" height="400"></a>
+			<div class="metaphoto" style="padding-top: 15px; float: left;">
+				<a href="#"><img src="images/welcome-video-screenshot.jpg" alt="" width="500" height="400"></a>
 			</div>
+			
+			<div class="clear" style="clear: both;"></div>
 		</article>
 		
-		<article style="border-bottom: 1px solid black; padding-bottom: 15px;">
-			<div class="metarelated">
-				<h2>What is server-side and why you should care</h2>
-			</div>
-
-			<div class="metashare" style="border-top: 1px solid black;">
-				<a href="#"><img src="images/socialplace.png" alt="" width="600" height="50"></a>
-			</div>
-
-			<div class="metaphoto" style="padding-top: 15px;">
-				<a href="#"><img src="images/welcome-video-screenshot.jpg" alt="" width="600" height="400"></a>
-			</div>
-		</article>
 		<!Use if nothing found -->
 		<article id="post-0" class="no-results-found">
 			<header class="search-page-header">
@@ -66,6 +108,13 @@
 				<p>Sorry, but nothing matched your search.</p>
 			</div>
 	</div>
+</section>
+<section id="search" style="text-align: center;">
+	<form method="get" id="searchform">
+<!-- 		<label for="s" class="assistive-text">Search</label> -->
+		<input type="text" class="field" name="s" id="s" placeholder="Search" />
+		<input type="submit" class="submit" name="submit" id="searchsubmit" value="Search" />
+	</form>
 </section>
 </body>
 </html>
