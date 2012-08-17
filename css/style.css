@@ -127,7 +127,7 @@ width: 1018px;
 margin: auto;
 }
 body{
-  background-image: url('images/stacked_circles.png');
+  background-image: url('../images/stacked_circles.png');
   margin:0px;
   padding:0px;
 }
