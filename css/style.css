@@ -64,10 +64,6 @@ td { vertical-align: top; }
 
 .chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
 
-@font-face {
-	font-family: 'Chunkfive';
-	src: url('../Chunkfive.otf');
-}
 
 /* SEARCH RESULTS PAGE STYLES */
 .search-page-header {
