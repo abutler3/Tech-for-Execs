@@ -64,11 +64,82 @@ td { vertical-align: top; }
 
 .chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
 
+@font-face {
+	font-family: 'Chunkfive';
+	src: url('../Chunkfive.otf');
+}
 
+/* SEARCH RESULTS PAGE STYLES */
+.search-page-header {
+	background-color: #F0E4E9; 
+	padding: 10px;
+}
 
+.search-result-article {
+	padding-bottom: 15px; 
+	border-bottom: 1px solid black;
+}
 
+.metarelated {
+	float: right;
+}
 
+.metarelated a {
+	text-decoration: none;
+}
 
+.metarelated a:hover {
+	color: #934543;
+}
+.search-heading {
+	font-size: 30px; 
+	width: 200px;
+}
+
+.metaphoto {
+	padding-top: 15px; 
+	float: left;
+}
+#primary {
+	width: 960px;
+	margin: 0 auto;
+}
+
+a {
+	color: black;
+}
+
+a:hover{
+	color:#934543;
+}
+header ul li{
+	float:left;
+	list-style:none;
+	display:inline;
+	}
+#searchbar{
+	margin-left:750px;
+/* 	width:250px; */
+}
+form{
+	float:left;
+	/* Changed to push form to the right */
+	margin-left:190px;
+}
+button{
+	float:left;
+}
+header ul li a{
+	text-decoration: none;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 30px;
+	font-family: 'Chunkfive', Fallback, sans-serif;
+}
+header ul li a:hover{
+	color:#934543;
+	
+	
 
 
 
