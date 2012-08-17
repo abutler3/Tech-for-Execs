@@ -68,8 +68,13 @@ td { vertical-align: top; }
 
 
 .search-result-article {
-	padding-bottom: 15px; 
+	padding: 15px; 
 	border-bottom: 1px solid black;
+}
+
+.search-page-header {
+	background-color: #F0E4E9;
+	padding: 15px;
 }
 
 .metarelated {
@@ -78,6 +83,7 @@ td { vertical-align: top; }
 
 .metarelated a {
 	text-decoration: none;
+	color: black;
 }
 
 .metarelated a:hover {
@@ -87,7 +93,16 @@ td { vertical-align: top; }
 	font-size: 30px; 
 	width: 200px;
 }
-=======
+
+.metaphoto {
+	padding-top: 15px; 
+	float: left;
+}
+
+#about {
+	padding: 15px;
+}
+/* ======= */
 @font-face {
   font-family: 'Chunkfive';
   src: url('Chunkfive.otf');
@@ -112,7 +127,7 @@ width: 1018px;
 margin: auto;
 }
 body{
-  background-image: url('stacked_circles.png');
+  background-image: url('images/stacked_circles.png');
   margin:0px;
   padding:0px;
 }
@@ -139,7 +154,7 @@ header ul li{
 }
 form{
   float:left;
-  margin-left:290px;
+  margin-left:190px;
 }
 button{
   float:left;
