@@ -5,8 +5,6 @@
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<link rel="stylesheet" type="text/css" href="Home_page_style_BU1.css" />
-
 <head>
   <meta charset="utf-8">
 
@@ -22,14 +20,14 @@
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>">
 
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
 
   <!-- All JavaScript at the bottom, except this Modernizr build.
        Modernizr enables HTML5 elements & feature detects for optimal performance.
        Create your own custom Modernizr build: www.modernizr.com/download/ -->
-  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <script src="<?php bloginfo('template_url');?>/js/libs/modernizr-2.5.3.min.js"></script>
 </head>
 <body>
   <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
@@ -38,7 +36,7 @@
   
     <header>
   <div id="top">
-  <h1><img src="logo-red-dropshadow.jpg"/></h1>
+  <h1><img src="<?php echo get_template_directory_uri(); ?>/logo-red-dropshadow.jpg" alt="logo"></h1>
    <ul>
     <li><a href="index.html">HOME</a></li>
     <li><a href="video.html">VIDEO</a></li>
@@ -50,7 +48,7 @@
 					<div style="clear: both;"></div>
    </ul>
   </div><!--/top-->
-  
+     <hr />
 
   </header>
   <div role="main">
@@ -120,35 +118,37 @@
 			<input type="submit" id="email" type="submit" value="Email"/>
 </div>
 
-</div><!--end of list-->
+</div>
 
 
 
 </content>
-  </div><!--end of main-->
-  
+  </div>
+  <footer>
+
+  </footer>
+
 
   <!-- JavaScript at the bottom for fast page loading -->
 
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
- <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript" src="jquery.infinitecarousel3.js"></script>
-<script type="text/javascript" src="jquery.infinitecarousel3.min.js"></script>
-<script type="text/javascript" src="jquery.easing.1.3.js"></script>
-
-
+ <script type="text/javascript"  src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('template_url');?>/jquery.infinitecarousel3.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('template_url');?>/jquery.infinitecarousel3.min.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('template_url');?>/jquery.easing.1.3.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+<!--
   <!-- scripts concatenated and minified via build script -->
-  <script src="js/plugins.js"></script>
-  <script src="js/script.js"></script>
+  <script src="<?php bloginfo('template_url');?>/js/plugins.js"></script>
+  <script src="<?php bloginfo('template_url');?>/js/script.js"></script>
   <!-- end scripts -->
-
+-->
   <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
        mathiasbynens.be/notes/async-analytics-snippet -->
 <script>
- 
-$(document).ready( function(){
-$("#carousel").infiniteCarousel({
+           
+	$(document).ready( function(){
+        $("#carousel").infiniteCarousel({
         imagePath: '',
 		transitionSpeed:300,
 		displayTime: 6000,
@@ -165,16 +165,16 @@ $("#carousel").infiniteCarousel({
 		prevNextInternal: true,
 		autoHideCaptions: false
 });
-});
-   
-	</script>
-    <script>	
- 
+});   
+	   
+</script>	   
+	   
+	   
+  <script>
     var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
     g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
     s.parentNode.insertBefore(g,s)}(document,'script'));
   </script>
-
 </body>
 </html>
