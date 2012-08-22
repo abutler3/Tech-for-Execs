@@ -1,23 +1,18 @@
-<?php get_header();?>
-  <div role="main">
+<?php get_header(); ?>
+
+<div role="main">
  <div id="container">
-  <ul id="carousel">
-<!--<li><div id="vid0"><iframe width="560" height="315" src="http://www.youtube.com/embed/UfjEydlUdT8" frameborder="0" allowfullscreen></iframe></div></li>-->
-<!--<li><iframe longdesc="http://img.youtube.com/vi/QQh56geU0X8/2.jpg" width="640" height="360" src="http://www.youtube.com/embed/QQh56geU0X8?rel=0&amp;hd=1" wmode="transparent" frameborder="0" allowfullscreen></iframe></li>-->
-<li><iframe longdesc="http://img.youtube.com/vi/UfjEydlUdT8/2.jpg" width="640" height="360" src="http://www.youtube.com/embed/UfjEydlUdT8" wmode="transparent" frameborder="0" allowfullscreen></iframe></li>
-<li><iframe longdesc="http://img.youtube.com/vi/KXdUNp_9oHs/2.jpg" width="640" height="360" src="http://www.youtube.com/embed/KXdUNp_9oHs" wmode="transparent" frameborder="0" allowfullscreen></iframe></li>
-<li><iframe longdesc="http://img.youtube.com/vi/kkGeOWYOFoA/2.jpg" width="640" height="360" src="http://www.youtube.com/embed/kkGeOWYOFoA" wmode="transparent" frameborder="0" allowfullscreen></iframe></li>
-<li><iframe longdesc="http://img.youtube.com/vi/hjnc1kHMDDo/2.jpg" width="640" height="360" src="http://www.youtube.com/embed/hjnc1kHMDDo" wmode="transparent" frameborder="0" allowfullscreen></iframe></li>
-</ul>
+<?php $posts=query_posts($query_string .
+
+'&posts_per_page=20'); ?>
 
 
-
+<?php if (have_posts()) : ?>
 <div id="list">
-<h3>List of Videos Avalable</h3>
+<h1 class="results-title">Search Results</h1>
 <div class="list_vid">
-  <?php query_posts( 'post_type=videos' ) ?>
-  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-          <div class="metarelated">
+<?php while (have_posts()) : the_post(); ?>
+<div class="metarelated">
             <h4><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>
             <p><em>Filed under: <?php the_category('. '); ?></em></p>
             <p><em><a href="#">Comments: 15</a></em></p>
@@ -42,17 +37,20 @@
               <?php the_content(); ?>
             </div>
   <div class="clear" style="clear: both;"></div>
-    <?php endwhile; else: ?>
-    <p>Sorry, no posts matched your criteria.</p>
 
-  <?php endif; ?>
+
+<?php endwhile; ?>
+
+
+<?php endif; ?>
+
+
+<?php next_posts_link('&laquo; Older Entries') ?>
+
+<?php previous_posts_link('Newer Entries &raquo;') ?>
+</div>
+</div>
 </div>
 
 
-</div>
-
-
-
-</div>
-  </div>
-   <?php get_footer();?>
+<?php get_footer(); ?>

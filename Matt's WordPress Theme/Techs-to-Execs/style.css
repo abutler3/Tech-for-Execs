@@ -67,7 +67,51 @@ td { vertical-align: top; }
 
 .chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
 
+<style>
+#ic_2473715 {
+  margin: 0 auto;
+}
+div.ic_myCarousel {
+  margin: 0 auto;
+  clear:right;
+}
+.ic_myCarousel .ic_button {
+  float: left;
+  height: 47px;
+  line-height: 47px;
+  margin: 0 4px 0 2px;
+  width: 70px;
+  border: 1px solid #eee;
+  background: #ddd;
+}
+.ic_myCarousel .ic_thumbnails {
+  display: inline-block;
+}
 
+
+/* keep this after the ic_button code for proper border coloring */   
+.ic_myCarousel2 .ic_active, .ic_myCarousel .ic_active, .ic_vidCarousel .ic_active  {
+  background: #fff;
+  border: 1px solid #faa;
+}
+.ic_caption {
+  opacity: .6;
+  background: #fff;
+  font-size: 12px;
+  font-family: arial;
+  padding: 4px 8px;
+  width: auto;
+}
+
+div p {
+    color: #333333;
+    font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+    font-size: 18px;
+    text-shadow: 0 1px 1px #C9C9C9;
+}
+.options {
+  font-size: 16px;
+}
 
 
 .search-result-article {
@@ -82,6 +126,9 @@ td { vertical-align: top; }
 
 .metarelated {
 	float: right;
+  padding: 30px;
+  margin: 30px;
+  width: 150px; 
 }
 
 .metarelated a {
@@ -98,8 +145,13 @@ td { vertical-align: top; }
 }
 
 .metaphoto {
-	padding-top: 15px; 
+	padding: 30px;
+  margin: 30px; 
 	float: left;
+}
+
+.results-title {
+  margin: 10px;
 }
 
 #about {
