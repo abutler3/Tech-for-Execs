@@ -6,7 +6,7 @@ Template Name: Video (All)
   <div role="main">
  <div id="container">
   <div id="mainvideo">
-    <h2><?php the_title();?></h2>
+    
 
         <?php query_posts('post_type=video');
         if ( have_posts()) : while ( have_posts() ) : the_post(); ?>

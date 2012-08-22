@@ -13,6 +13,7 @@ Template Name: Video (Single)
 <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
 <?php endif;
 wp_reset_query(); ?>
+<?php the_excerpt();?>
     
 <div style="clear: both;"></div>
 </div><!--/single_video-->

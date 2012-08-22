@@ -42,8 +42,8 @@ function codex_custom_init() {
     'has_archive' => true, 
     'hierarchical' => false,
     'menu_position' => null,
-    'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
-    'taxonomies' => array('category')
+    'supports' => array( 'title', 'author', 'thumbnail', 'excerpt', 'comments' ),
+    'taxonomies' => array('category','post_tag')
   ); 
   register_post_type('video',$args);
 }
@@ -51,23 +51,6 @@ add_action( 'init', 'codex_custom_init' );
 
 include 'demo.php';
 
-<<<<<<< HEAD
-=======
-// Adds search bar to the header
-add_filter('wp_nav_menu_items','add_search_box', 10, 2);
-function add_search_box($items, $args) {
- 
-        ob_start();
-        get_search_form();
-        $searchform = ob_get_contents();
-        ob_end_clean();
- 
-        $items .= '<li>' . $searchform . '</li>';
- 
-    return $items;
-}
-// Ends add search to header
->>>>>>> Combined code from all into files
 
 ?>
 

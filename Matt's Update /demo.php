@@ -47,16 +47,16 @@ $meta_boxes[] = array(
 		// TEXT
 		array(
 			// Field name - Will be used as label
-			'name'		=> 'Video URL',
+			'name'		=> 'Video ID',
 			// Field ID, i.e. the meta key
 			'id'		=> $prefix .'video_url',
 			// Field description (optional)
-			'desc'		=> 'Ex: http://www.youtube.com/watch?v=wzkcmESTa0g',
+			'desc'		=> 'Ex: http://www.youtube.com/watch?v=<mark>91UpnieKYTs</mark>&feature=related',
 			// CLONES: Add to make the field cloneable (i.e. have multiple value)
 			'clone'		=> false,
 			'type'		=> 'text',
 			// Default value (optional)
-			'std'		=> 'http://www.youtube.com/watch?v=wzkcmESTa0g'
+			'std'		=> '91UpnieKYTs'
 		),
 		
 		
