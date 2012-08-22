@@ -15,9 +15,9 @@ body { margin: 0; font-size: 1em; line-height: 1.4; }
 ::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
 ::selection { background: #fe57a1; color: #fff; text-shadow: none; }
 
-a { color: #00e; }
-a:visited { color: #551a8b; }
-a:hover { color: #06e; }
+a { color: black; }
+a:visited { color: black; }
+a:hover { color: #934543; }
 a:focus { outline: thin dotted; }
 a:hover, a:active { outline: 0; }
 abbr[title] { border-bottom: 1px dotted; }
@@ -136,6 +136,11 @@ body{
   padding:0px;
 }
 #mainvideo{
+  width:1018px;
+  float:left;
+  padding-left: 40px;
+}
+#single_video{
   float:left;
   padding-left: 40px;
 }
@@ -185,6 +190,15 @@ header ul li a:hover{
   width: 100px;
   height:75px;
 }
+#video_all_thumbnails{
+  margin-right: 20px;
+  margin-bottom: 20px;
+  float: left;
+  width:300px;
+  height:225px;
+
+}
+
 footer{
   text-align: center;
 }
