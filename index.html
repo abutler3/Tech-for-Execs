@@ -20,14 +20,14 @@
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>">
 
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
 
   <!-- All JavaScript at the bottom, except this Modernizr build.
        Modernizr enables HTML5 elements & feature detects for optimal performance.
        Create your own custom Modernizr build: www.modernizr.com/download/ -->
-  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <script src="<?php bloginfo('template_url');?>/js/libs/modernizr-2.5.3.min.js"></script>
 </head>
 <body>
   <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
@@ -36,7 +36,8 @@
   
     <header>
   <div id="top">
-  <h1><img src="logo-red-dropshadow.jpg"/></h1>
+  <h1><img src="<?php echo get_template_directory_uri(); ?> /logo-red-dropshadow.jpg" alt="logo" /></h1>
+  
    <ul>
     <li><a href="index.html">HOME</a></li>
     <li><a href="video.html">VIDEO</a></li>
@@ -53,16 +54,18 @@
   </header>
   <div role="main">
     <content>
-
     
-
+  
+ 
 <ul id="carousel">
-<!--<li><div id="vid0"><iframe width="560" height="315" src="http://www.youtube.com/embed/UfjEydlUdT8" frameborder="0" allowfullscreen></iframe></div></li>-->
-<!--<li><iframe longdesc="http://img.youtube.com/vi/QQh56geU0X8/2.jpg" width="640" height="360" src="http://www.youtube.com/embed/QQh56geU0X8?rel=0&amp;hd=1" wmode="transparent" frameborder="0" allowfullscreen></iframe></li>-->
-<li><iframe longdesc="http://img.youtube.com/vi/UfjEydlUdT8/2.jpg" width="640" height="360" src="http://www.youtube.com/embed/UfjEydlUdT8" wmode="transparent" frameborder="0" allowfullscreen></iframe></li>
-<li><iframe longdesc="http://img.youtube.com/vi/KXdUNp_9oHs/2.jpg" width="640" height="360" src="http://www.youtube.com/embed/KXdUNp_9oHs" wmode="transparent" frameborder="0" allowfullscreen></iframe></li>
-<li><iframe longdesc="http://img.youtube.com/vi/kkGeOWYOFoA/2.jpg" width="640" height="360" src="http://www.youtube.com/embed/kkGeOWYOFoA" wmode="transparent" frameborder="0" allowfullscreen></iframe></li>
-<li><iframe longdesc="http://img.youtube.com/vi/hjnc1kHMDDo/2.jpg" width="640" height="360" src="http://www.youtube.com/embed/hjnc1kHMDDo" wmode="transparent" frameborder="0" allowfullscreen></iframe></li>
+
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> 
+<li> 
+           <?php the_content(); ?>               
+</li> 
+<?php endwhile; endif;wp_reset_query(); ?>
+   
+       
 </ul>
 
 
@@ -132,20 +135,21 @@
   <!-- JavaScript at the bottom for fast page loading -->
 
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script type="text/javascript" src="jquery.infinitecarousel3.js"></script>
-  <script type="text/javascript" src="jquery.infinitecarousel3.min.js"></script>
-  <script type="text/javascript" src="jquery.easing.1.3.js"></script>
+ <script type="text/javascript"  src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('template_url');?>/jquery.infinitecarousel3.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('template_url');?>/jquery.infinitecarousel3.min.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('template_url');?>/jquery.easing.1.3.js"></script>
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
-
+<!--
   <!-- scripts concatenated and minified via build script -->
-  <script src="js/plugins.js"></script>
-  <script src="js/script.js"></script>
+  <script src="<?php bloginfo('template_url');?>/js/plugins.js"></script>
+  <script src="<?php bloginfo('template_url');?>/js/script.js"></script>
   <!-- end scripts -->
-
+-->
   <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
        mathiasbynens.be/notes/async-analytics-snippet -->
-<script>	   
+<script>
+           
 	$(document).ready( function(){
         $("#carousel").infiniteCarousel({
         imagePath: '',

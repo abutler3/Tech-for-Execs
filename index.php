@@ -36,7 +36,8 @@
   
     <header>
   <div id="top">
-  <h1><img src="<?php echo get_template_directory_uri(); ?>/logo-red-dropshadow.jpg" alt="logo"></h1>
+  <h1><img src="<?php echo get_template_directory_uri(); ?> /logo-red-dropshadow.jpg" alt="logo" /></h1>
+  
    <ul>
     <li><a href="index.html">HOME</a></li>
     <li><a href="video.html">VIDEO</a></li>
@@ -53,16 +54,18 @@
   </header>
   <div role="main">
     <content>
-
     
-
+  
+ 
 <ul id="carousel">
-<!--<li><div id="vid0"><iframe width="560" height="315" src="http://www.youtube.com/embed/UfjEydlUdT8" frameborder="0" allowfullscreen></iframe></div></li>-->
-<!--<li><iframe longdesc="http://img.youtube.com/vi/QQh56geU0X8/2.jpg" width="640" height="360" src="http://www.youtube.com/embed/QQh56geU0X8?rel=0&amp;hd=1" wmode="transparent" frameborder="0" allowfullscreen></iframe></li>-->
-<li><iframe longdesc="http://img.youtube.com/vi/UfjEydlUdT8/2.jpg" width="640" height="360" src="http://www.youtube.com/embed/UfjEydlUdT8" wmode="transparent" frameborder="0" allowfullscreen></iframe></li>
-<li><iframe longdesc="http://img.youtube.com/vi/KXdUNp_9oHs/2.jpg" width="640" height="360" src="http://www.youtube.com/embed/KXdUNp_9oHs" wmode="transparent" frameborder="0" allowfullscreen></iframe></li>
-<li><iframe longdesc="http://img.youtube.com/vi/kkGeOWYOFoA/2.jpg" width="640" height="360" src="http://www.youtube.com/embed/kkGeOWYOFoA" wmode="transparent" frameborder="0" allowfullscreen></iframe></li>
-<li><iframe longdesc="http://img.youtube.com/vi/hjnc1kHMDDo/2.jpg" width="640" height="360" src="http://www.youtube.com/embed/hjnc1kHMDDo" wmode="transparent" frameborder="0" allowfullscreen></iframe></li>
+
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> 
+<li> 
+           <?php the_content(); ?>               
+</li> 
+<?php endwhile; endif;wp_reset_query(); ?>
+   
+       
 </ul>
 
 
