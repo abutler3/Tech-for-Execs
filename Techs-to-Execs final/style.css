@@ -102,8 +102,8 @@ td { vertical-align: top; }
 }
 
 .metaphoto {
-	padding: 30px;
-  margin: 30px; 
+	padding: 15px;
+  margin: 15px; 
 	float: left;
 }
 
@@ -204,6 +204,18 @@ header ul li a:hover{
 #single_video{
   float:left;
 }
+
+.social-loop {
+  margin: 15px;
+}
+
+.twitterbutton, .likebutton, .linkedinshare, .plusonebutton, .email {
+  float: left;
+  width: 100px;
+  padding: 10px;
+}
+
+
 footer{
   text-align: center;
 }
