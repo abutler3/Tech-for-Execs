@@ -102,8 +102,8 @@ td { vertical-align: top; }
 }
 
 .metaphoto {
-	padding: 15px;
-  margin: 15px; 
+	padding: 30px;
+  margin: 30px; 
 	float: left;
 }
 
@@ -145,7 +145,9 @@ body{
   padding:0px;
 }
 #mainvideo{
-  width:1018;
+  float:left;
+  overflow: auto;
+  margin: 0px;
   padding-left: 40px;
 }
 header{
@@ -201,21 +203,15 @@ header ul li a:hover{
   height:225px;
 
 }
+
+#video_titles{
+  margin:0px;
+  padding: 0px;
+  width:200px;
+}
 #single_video{
   float:left;
 }
-
-.social-loop {
-  margin: 15px;
-}
-
-.twitterbutton, .likebutton, .linkedinshare, .plusonebutton, .email {
-  float: left;
-  width: 100px;
-  padding: 10px;
-}
-
-
 footer{
   text-align: center;
 }
