@@ -102,8 +102,8 @@ td { vertical-align: top; }
 }
 
 .metaphoto {
-	padding: 30px;
-  margin: 30px; 
+	padding: 15px;
+  margin: 15px; 
 	float: left;
 }
 
@@ -212,8 +212,51 @@ header ul li a:hover{
 #single_video{
   float:left;
 }
+
+.social-loop {
+  margin: 15px;
+}
+
+.twitterbutton, .likebutton, .linkedinshare, .plusonebutton, .email {
+  float: left;
+  width: 100px;
+  padding: 10px;
+}
+#list {
+  width: 1018px;
+  margin: 20px;
+}
+
+.list-header {
+  margin: 30px;
+  padding: 20px;
+}
+
+.archive-front {
+  float: left;
+  overflow: auto;
+  padding: 10px;
+  margin: 15px;
+  width: 450px;
+}
+
+.ftwitterbutton, .flikebutton, .flinkedinshare, .fplusonebutton, .femail {
+  float: left;
+  width: 80px;
+  padding: 5px;
+}
+
+.archive-meta {
+  padding: 0;
+}
+
+.front-thumbnail {
+  margin-top: 20px;
+  clear: both;
+}
 footer{
   text-align: center;
+  clear: both;
 }
 
 
