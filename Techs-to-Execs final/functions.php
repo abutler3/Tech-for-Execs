@@ -65,6 +65,20 @@ function add_search_box($items, $args) {
     return $items;
 }
 // Ends add search to header
+// Trims Post Titles
+function trim_title() {
+$title = get_the_title();
+$limit = "20";
+$pad="...";
+
+if(strlen($title) <= $limit) {
+echo $title;
+} else {
+$title = substr($title, 0, $limit) . $pad;
+echo $title;
+}
+}
+//end title trim
 
 ?>
 
