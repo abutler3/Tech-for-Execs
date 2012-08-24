@@ -210,6 +210,7 @@ header ul li a:hover{
   padding: 0px;
   width:200px;
 }
+
 .archive-video {
   float: left;
   overflow: auto;
@@ -258,8 +259,16 @@ width:200px;
 
 .ftwitterbutton, .flikebutton, .flinkedinshare, .fplusonebutton, .femail {
   float: left;
-  width: 80px;
-  padding: 5px;
+  /*width: 100px;*/
+  /*padding: 2px;*/
+}
+
+.fsocial {
+  width: 230px;
+}
+
+.fplusonebutton {
+  margin-left: 15px;
 }
 
 .archive-meta {
@@ -270,6 +279,16 @@ width:200px;
   margin-top: 20px;
   clear: both;
 }
+
+.archive-meta h3 a {
+  text-decoration: none;
+  color: black;
+}
+
+.archive-meta h3 a:hover {
+  color: #934543;
+}
+
 footer{
   text-align: center;
   clear: both;
