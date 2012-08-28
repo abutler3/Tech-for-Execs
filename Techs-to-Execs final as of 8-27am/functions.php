@@ -68,7 +68,7 @@ function add_search_box($items, $args) {
 // Trims Post Titles
 function trim_title() {
 $title = get_the_title();
-$limit = "50";
+$limit = "35";
 $pad="...";
 
 if(strlen($title) <= $limit) {

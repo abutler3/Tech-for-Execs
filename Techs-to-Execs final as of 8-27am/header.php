@@ -36,9 +36,7 @@
   
  <header>
   <div id="top">
-  
-  <img src="<?php bloginfo('template_directory'); ?>/images/logo_aug27.jpg" alt="" />
-
+   <h1><img src="<?php bloginfo('template_directory'); ?>/images/logo-red-dropshadow.jpg" alt="" /></h1>
    <?php wp_nav_menu(  
     array(  
         'container'       => 'div',  
@@ -47,5 +45,5 @@
 ); ?>  
 					<div style="clear: both;"></div>
   </div><!--/top-->
-     <hr/>
+     <hr />
 </header>
