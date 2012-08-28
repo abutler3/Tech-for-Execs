@@ -294,6 +294,20 @@ footer{
   clear: both;
 }
 
+#text1{
+   font-style: oblique;
+   
+  
+   }
+#text2{
+   font-family:Brush Script MT;
+   font-weight: bold;
+   }
+   
+ 
+strong{
+      font-family:Brush Script MT;
+    }
 
 
 

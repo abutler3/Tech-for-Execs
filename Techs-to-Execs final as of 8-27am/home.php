@@ -5,16 +5,11 @@ Template Name: Home
   <div role="main">
  <div id="container">
   <ul id="carousel">
-<<<<<<< HEAD
-    <?query_posts(array('post_type'=>'video','posts_per_page'=>4,'orderby' => 'rand')); ?>
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>         
-=======
 
   <?php $args = array('post_type'=>'video', 'showposts'=>3, 'orderby'=>'rand'); 
   $customQuery = new WP_Query($args); ?>
      
 <?php if ($customQuery-> have_posts() ) : while ($customQuery-> have_posts() ) :$customQuery-> the_post(); ?>        
->>>>>>> Adding car. stuff and archive stuff and style
    <li><iframe longdesc="http://img.youtube.com/vi/<?php echo get_post_meta( get_the_ID(), 'YOUR_PREFIX_video_url', true );?>/2.jpg" width="640" height="480" src="http://www.youtube.com/embed/<?php echo get_post_meta( get_the_ID(), 'YOUR_PREFIX_video_url', true );?>?rel=0&amp;hd=1" wmode="transparent" frameborder="0" allowfullscreen></iframe></li>
  <?php endwhile; endif; ?>
 </ul>

@@ -1,6 +1,7 @@
- <footer>
-<h2>footer info</h2>
-  </footer>
+<footer>
+        <p><img src="<?php bloginfo('template_directory'); ?>/images/logo-red-dropshadow.jpg" alt="" width="300px" height="30px"/><div id="text1"> © 2012 Tech For The Rest.</div><div id="text2"> The best technical videos for Executives. All Rights Reserved.</div></p>
+    <p><a href="#"><strong>Email us</strong></a></p>
+</footer>
 
 
 <!-- JavaScript at the bottom for fast page loading -->
