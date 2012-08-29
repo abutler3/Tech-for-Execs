@@ -19,6 +19,7 @@
   <meta name="viewport" content="width=device-width">
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+<link href='http://fonts.googleapis.com/css?family=Quicksand:300' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>">
 

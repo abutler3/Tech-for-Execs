@@ -5,7 +5,7 @@ Template Name: Video (Single)
   <div role="main">
  <div id="container">
   <div id="single_video">
-    <h2><?php the_title();?></h2>
+    <h2><?php trim_title();?></h2>
     <div class="social-loop">
 
           <div class="twitterbutton"><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script><div> <a href="http://twitter.com/share" class="twitter-share-button" data-url="<?php the_permalink() ?>" data-counturl="<?php the_permalink() ?>" data-text="<?php the_title(); ?>" data-via="username" data-related="username">Tweet</a></div></div>
@@ -24,6 +24,7 @@ Template Name: Video (Single)
         <?php 
         if ( have_posts()) : while ( have_posts() ) : the_post(); ?>
           <iframe width="640" height="480" src="http://www.youtube.com/embed/<?php echo get_post_meta( get_the_ID(), 'YOUR_PREFIX_video_url', true );?>?rel=0" frameborder="0" allowfullscreen></iframe>
+        <p id="single_video_category"><em>Filed under: <?php the_category(' , '); ?></em></p>
         <?php endwhile; else: ?>
 <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
 <?php endif;
@@ -33,7 +34,7 @@ wp_reset_query(); ?>
 <div style="clear: both;"></div>
 </div><!--/single_video-->
 <?php get_sidebar();?>
-<img src="<?php bloginfo('template_directory'); ?>/images/disqus_screen_shot.png" alt="" />
+<img id='disqus_img'src="<?php bloginfo('template_directory'); ?>/images/disqus_screen_shot.png" alt="" />
   <footer>
   </footer>
 <div style="clear: both;"></div>

@@ -5,7 +5,7 @@ Template Name: Home
   <div role="main">
  <div id="container">
  
-
+<h2 id="tagline">BRIDGING THE GAP BETWEEN TECHS AND EXECS</h2>
   <ul id="carousel">
     <?query_posts(array('post_type'=>'video','posts_per_page'=>4,'orderby' => 'rand')); ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>         
@@ -16,7 +16,7 @@ Template Name: Home
 <hr/>
 
 <div id="list">
-<h2 class="list-header">List of Videos Avalable</h2>
+<h2 class="list-header">List of Videos Available</h2>
   <div style="clear: both;"></div>
 
         <?php query_posts('post_type=video');
@@ -28,7 +28,7 @@ Template Name: Home
 </div> <!-- End front-thumbnail -->
   <div class="archive-meta">
             <h3 id="title"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php trim_title(); ?></a></h3>
-    <p id="category"><em>Filed under: <?php the_category('. '); ?></em></p>
+    <p id="category"><em>Filed under: <?php the_category(' , '); ?></em></p>
   </div> <!-- End archive-meta --> 
 </article>
 

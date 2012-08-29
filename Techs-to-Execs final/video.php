@@ -7,7 +7,7 @@ Template Name: Video (All+)
   <div role="main">
    <div id="container">
    <div id="list">
-<h2 class="list-header">List of Videos Avalable</h2>
+<h2 class="list-header">List of Videos Available</h2>
   <div style="clear: both;"></div>
 
         <?php query_posts('post_type=video');
@@ -32,6 +32,6 @@ wp_reset_query(); ?>
 </div> <!-- End list -->
 <div style="clear: both;"></div>
   </div><!--/container-->
-   <footer>
-  </footer>
+
  </div><!--/main-->
+  <?php get_footer();?>
